@@ -7,11 +7,6 @@
     
 
 }
-.desactivado{
-
-    display: none;
-
-}
 
 span{
 
@@ -256,13 +251,6 @@ span{
 
 }
 
-.productos{
-
-    min-height: 100vh;
-
-
-
-}
 
 .titulo{
 
@@ -283,6 +271,7 @@ span{
     margin: 0% auto;
     border-left: 3px solid rgba(128, 128, 128, 0.5);
     border-right: 3px solid rgba(128, 128, 128, 0.5);
+    border-bottom: 3px solid rgba(128, 128, 128, 0.5);
 
 }
 
@@ -577,6 +566,7 @@ span{
     gap: 60px;
     align-items: center;
     margin: auto 0px;
+    width: 100%;
 
 }
 
@@ -656,6 +646,7 @@ span{
     margin: 2% auto;
     color: lightgrey;
     border-radius: 6rem;
+    border: 2px solid black;
 
 }
 
@@ -670,6 +661,7 @@ span{
 
     text-align: center;
     margin: auto 0%;
+    width: 100%;
 }
 
 .operador-inf__estadisticas label{

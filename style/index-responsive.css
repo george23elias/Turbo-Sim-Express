@@ -1,5 +1,4 @@
 @media (max-width: 800px) {
-    
 
     .Login{
 
@@ -24,8 +23,6 @@
         transition: all .5s;
         flex-flow: column wrap;
         gap: 0;
-        
-
 
     }
     .nav ul li{
@@ -64,8 +61,7 @@
 
     .nav{
 
-        
-        padding: 0% 4%;
+        width: 100vw;
 
     
     }
@@ -74,7 +70,7 @@
 }
 
 
-@media (max-width: 800px) and (min-width: 500px) {
+@media (max-width: 915px) and (min-width: 500px) {
     
 
     .operador{
@@ -86,6 +82,13 @@
 
 
     }
+    .operador-inf{
+
+        width: 100%;
+
+    }
+
+
 
     .operador table{
 
@@ -102,15 +105,12 @@
     .operador table th{
 
         font-size: 20px;
-        
     
     }
 
     .operador table td{
 
         font-size: 15px;
-        
-        
     
     }
 
@@ -146,6 +146,18 @@
         text-transform: capitalize;
         
     
+    }
+
+    .container-item{
+
+        width: 100%;
+
+    }
+
+    .productos{
+
+        min-height: 0%;
+
     }
 
 
@@ -212,19 +224,34 @@
 @media (max-width: 500px) and (min-width: 320px) {
 
     
-    .head-container{
 
-        width: 100%;
-        background-color: blueviolet;
+    .Intro-titulo{
 
-    }
-
-    main{
-
-        width: 100%
+        margin: 30px auto;
 
     }
 
+    .Intro-titulo h1{
+
+        font-size: 25px;
+        font-weight: 700;
+        
+    }
+
+    .Intro-titulo p{
+
+        font-size: 20px;
+
+    }
+
+
+ 
+    .anuncio{
+
+        width: 90%;
+        height: 120px;
+
+    }
 
     .operador{
 
@@ -241,11 +268,25 @@
         border: 2px solid rgba(0, 0, 0, 0.774);
         margin: 0 auto;
         width: 80%;
+        
+    }
+
+    .operador-inf{
+
+        gap: 50px;
+
     }
 
     .operador-inf h1{
 
-        font-size: 40px;
+        font-size: 33px;
+
+    }
+
+    .operador-inf p{
+
+        font-size: 20px;
+        width: 100%;
 
     }
 
@@ -256,7 +297,8 @@
         width: 100%;
         border: 2px solid black;
         margin:  5% auto;
-        
+        overflow: hidden;
+        gap: 2px;
 
     }
 
@@ -274,40 +316,96 @@
         
     }
 
+    .titulo{
+
+        margin: 10% 0;
+
+    }
+
+    .titulo h1{
+
+        font-size: 28px;
+
+    }
+
+
+    .productos{
+
+        margin-bottom: 20%;
+        
+
+    }
+
+    .container-item{
+
+        width: 100%;
+        border-bottom: 3px solid rgba(128, 128, 128, 0.5);
+    }
+
+    
+
+    .item{
+
+        gap: 25px;
+        height: 160px;
+        padding: 2% 2% 0%;
+
+    }
+
+    .container-descripcion{
+
+        text-align: center;
+
+    }
 
 
     .descripcion-inf ul{
 
         font-size: 15px;
+        text-align: left;
  
+     }
+
+
+     .footer-container{
+
+        overflow: hidden;
+
      }
 
 
 
      .logo{
 
-        width: 20%;
+        width: 23%;
         margin: auto 0;
     
     }
 
+    .footer-container ul{
+
+        gap: 0;
+        font-size: 10px;
+
+    }
+
     .footer-titulo{
 
-        font-size: 15px;
+        font-size: 12px;
         font-weight: 800;
     
     }
 
     .footer-subtitulo{
 
-        font-size: 12px;
+        font-size: 10px;
         cursor: pointer;
         
     }
 
     .copyright{
 
-        font-size: 13px;
+        font-size: 8px;
 
     }
 
