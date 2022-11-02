@@ -1,0 +1,289 @@
+@media (max-width: 800px) {
+    
+
+    .Login{
+
+        display: none;
+
+    }
+
+    .check-btn{
+
+        display: block;
+
+    }
+    .nav ul{
+
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.89);
+        top: 60px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        flex-flow: column wrap;
+        gap: 0;
+        
+
+
+    }
+    .nav ul li{
+
+        display: block;
+        height: 100px;
+        border: 2px solid grey;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: none;
+        font-size: 15px;
+
+    }
+    .nav ul li:hover{
+
+        color: darkred;
+        background: rgba(255, 255, 255, 0.89);
+
+    }
+
+
+    #check:checked ~ ul {
+
+        left: 0%;
+
+    }
+
+    .nav .logo{
+
+        width: 12%;
+        cursor: pointer;
+    
+    }
+
+    .nav{
+
+        
+        padding: 0% 4%;
+
+    
+    }
+    
+
+}
+
+
+@media (max-width: 800px) and (min-width: 500px) {
+    
+
+    .operador{
+
+        align-items: center;
+        flex-flow: column-reverse wrap;
+        justify-content: center;
+        gap: 50px;
+
+
+    }
+
+    .operador table{
+
+        margin: 0;
+        height: 600px;
+        width: 500px;
+        text-align: center;
+        padding: 0% 3%;
+        
+    
+    }
+
+    .operador table th{
+
+        font-size: 20px;
+        
+    
+    }
+
+    .operador table td{
+
+        font-size: 15px;
+        
+        
+    
+    }
+
+
+
+    .operador-inf__estadisticas{
+
+        width: 100%;
+        border: 2px solid black;
+
+
+    }
+
+    .operador-inf h1{
+
+        font-size: 50px;
+
+
+    }
+
+    .operador-inf__estadisticas label{
+
+        font-size: 15px;
+    
+    
+    }
+
+    .operador-inf__estadisticas p{
+
+        width: 100%;
+        font-size: 13px;
+        text-transform: capitalize;
+        
+    
+    }
+
+
+    .container-descripcion label {
+        font-size: 35px;
+        font-weight: bold;
+        text-transform: capitalize;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .container-descripcion {
+        text-align: center;
+    }
+
+
+    .descripcion-inf{
+
+        margin-top: 5px;
+        text-align: left;
+        
+    }
+    .descripcion-inf ul{
+
+       font-size: 20px;
+
+    }
+
+
+    .logo{
+
+        width: 20%;
+        margin: auto 0;
+    
+    }
+
+    .footer-titulo{
+
+        font-size: 15px;
+        font-weight: 800;
+    
+    }
+
+    .footer-subtitulo{
+
+        font-size: 12px;
+        cursor: pointer;
+        
+    }
+
+
+    
+
+    .copyright{
+
+        font-size: 13px;
+
+    }
+    
+    
+
+}
+
+
+@media (max-width: 500px) {
+
+    .operador table{
+
+        border: 2px solid rgba(0, 0, 0, 0.774);
+    
+    }
+
+
+    
+    .operador-inf__estadisticas{
+
+        width: 100%;
+        border: 2px solid black;
+
+
+    }
+
+    .operador-inf__estadisticas label{
+
+        font-size: 15px;
+    
+    
+    }
+
+    .operador-inf__estadisticas p{
+
+        width: 100%;
+        font-size: 13px;
+        text-transform: capitalize;
+        
+    
+    }
+
+
+
+    .descripcion-inf ul{
+
+        font-size: 15px;
+ 
+     }
+
+
+
+     .logo{
+
+        width: 20%;
+        margin: auto 0;
+    
+    }
+
+    .footer-titulo{
+
+        font-size: 15px;
+        font-weight: 800;
+    
+    }
+
+    .footer-subtitulo{
+
+        font-size: 12px;
+        cursor: pointer;
+        
+    }
+
+
+    
+
+    .copyright{
+
+        font-size: 13px;
+
+    }
+
+
+
+
+
+
+}
