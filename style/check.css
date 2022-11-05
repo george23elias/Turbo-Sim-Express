@@ -7,15 +7,14 @@
 
 }
 body{
-
     
+    background: black;
     
-    
-
 }
 
 main{
 
+    position: relative;
     margin: 0% auto;
     display: flex;
     flex-flow: column wrap;
@@ -24,16 +23,10 @@ main{
     overflow: hidden;
     color: rgba(245, 245, 245, 0.74);
     width: 100%;
-    height: 100vh;
-    
     background: linear-gradient(to bottom, red,rgba(0, 0, 0, 0.9));
     overflow: auto;
-    
-
 
 }
-
-
 
 .anuncio{
 
@@ -104,6 +97,13 @@ main{
     color: white;
     cursor: pointer;
 }
+.container-verificacion button label{
+
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    
+}
 
 .container-verificacion button:hover{
 
@@ -113,3 +113,124 @@ main{
 }
 
 
+
+
+
+/*tabla*/
+
+
+
+
+.container-table{
+
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    width: 40%;
+    height: 80vh;
+    transition: all .5s;
+    
+
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 25px;
+    background: rgba(255, 255, 255, 0.95);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 18px;
+    color: black;
+    
+    
+
+}
+
+
+.container-table__titulo{
+
+    text-transform: capitalize;
+    font-size: 30px;
+    
+
+}
+table{
+
+    width: 100%;
+    padding: 0% 3%;
+
+}
+
+table th{
+
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: capitalize;
+    text-align: left;
+    border-bottom:1px solid rgb(0, 0, 0);
+    
+
+}
+
+table td{
+
+    font-size: 16px;
+    text-transform: capitalize;
+    text-align: right;
+    border-bottom: 1px solid rgb(0, 0, 0) ;
+    
+
+}
+
+.container-table button{
+
+    width: 120px;
+    height: 40px;
+    text-transform: capitalize;
+    font-size: 20px;
+    background: rgba(139, 0, 0, 0.87);
+    color: white;
+    border-radius: 18px;
+    cursor: pointer;
+    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
+
+}
+
+.container-table button label{
+
+    cursor: pointer;
+    
+
+}
+
+.container-table{
+    opacity: 0;
+}
+
+#radio1{
+
+    display: none;
+
+}
+
+
+#radio1:checked ~ .container-table{
+
+    opacity: 1;
+
+}
+
+#radio2{
+
+    display: none;
+
+}
+
+
+#radio2:checked ~ .container-table{
+
+   opacity: 0;
+   
+
+}
