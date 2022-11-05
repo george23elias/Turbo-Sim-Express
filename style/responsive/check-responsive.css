@@ -1,0 +1,49 @@
+@media (max-width: 800px) {
+
+    main{
+
+        flex-flow: column;
+        gap: 50px;
+        padding: 4% 5%;
+        
+
+    }
+    
+    .anuncio{
+
+        width: 98%;
+
+    }
+
+    .container-inf__titulo{
+
+        font-size: 40px;
+
+    }
+
+    .container-inf__text{
+
+        font-size: 20px;
+
+    }
+
+
+    .container-verificacion{
+
+
+        width: 100%;
+
+    }
+
+    .container-verificacion input{
+
+        font-size: 16px;
+        width: 75%;
+
+    }
+    .container-verificacion button{
+
+        width: 25%;
+
+    }
+}

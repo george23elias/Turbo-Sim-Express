@@ -19,6 +19,10 @@ span{
     display: flex;
 
 }
+a{
+    color: currentColor;
+    text-decoration: none;
+}
 
 /*nav*/
 
@@ -46,6 +50,7 @@ span{
     height: 60px;
     background-color: darkred;
     color: white;
+    border-bottom: 1px solid black;
 
 }
 .nav .logo{
@@ -724,6 +729,7 @@ footer{
 
     background: darkred;
     padding: 0% 0% 1%;
+    border-top: 1.5px solid black;
 
 }
 
