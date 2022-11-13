@@ -1,166 +1,140 @@
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
 
-    .Login{
+    .Login {}
 
-       
+    .check-btn {
 
-    }
-
-    .check-btn{
-
-        display: block;
+        display : block;
         position: absolute;
-        float: left;
+        float   : left;
 
     }
-    .nav ul{
 
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: rgba(0, 0, 0, 0.89);
-        top: 60px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-        flex-flow: column wrap;
-        gap: 0;
-
+    .nav ul {
+        position       : fixed;
+        width          : 100%;
+        height         : 100vh;
+        background     : white;
+        top            : 60px;
+        left           : -100%;
+        text-align     : center;
+        transition     : all .5s;
+        flex-flow      : column wrap;
+        gap            : 0;
+        justify-content: flex-start;
     }
-    .nav ul li{
 
-        display: block;
-        height: 100px;
-        border: 2px solid grey;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
+    .nav ul li {
+        display        : block;
+        height         : 100px;
+        box-shadow     : rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        overflow       : hidden;
+        display        : flex;
+        align-items    : center;
         justify-content: center;
-        border-radius: none;
-        font-size: 15px;
-
-    }
-    .nav ul li:hover{
-
-        color: darkred;
-        background: rgba(255, 255, 255, 0.89);
-
+        border-radius  : none;
+        font-size      : 15px;
+        font-family    : robotoMedium;
     }
 
-
-    #check:checked ~ ul {
+    #check:checked~ul {
 
         left: 0%;
 
     }
 
-    .nav .logo{
+    .nav .logo {
 
-        width: 110px;
-        height: 55px;
-        cursor: pointer;
-        margin-left: 50px;
+        width           : 110px;
+        height          : 55px;
+        cursor          : pointer;
+        margin-left     : 50px;
         background-color: white;
-        padding: 1.5% 2%;
-    
+        padding         : 1.5% 2%;
+
     }
 
-    .nav{
+    .nav {
 
         width: 100vw;
 
-    
+
     }
-    
+
 
 }
 
 
 @media (max-width: 915px) and (min-width: 500px) {
-    
 
-    .operador{
 
-        align-items: center;
-        flex-flow: column-reverse wrap;
+    .operador {
+        align-items    : center;
+        flex-flow      : column-reverse wrap;
         justify-content: center;
-        gap: 50px;
-
+        gap            : 50px;
 
     }
-    .operador-inf{
 
+    .operador-inf {
         width: 100%;
-
     }
 
 
 
-    .operador table{
+    .operador table {
 
-        margin: 0;
-        height: 600px;
-        width: 400px;
+        margin    : 0;
+        height    : 600px;
+        width     : 400px;
         text-align: center;
-        padding: 0% 3%;
-        margin: 0% auto;
-        
-    
+        padding   : 0% 3%;
+        margin    : 0% auto;
+
+
     }
 
-    .operador table th{
+    .operador table th {
 
         font-size: 20px;
-    
+
     }
 
-    .operador table td{
+    .operador table td {
 
         font-size: 15px;
-    
+
     }
 
 
 
-    .operador-inf__estadisticas{
-
-        width: 100%;
-        border: 2px solid black;
+    .operador-inf__estadisticas {
+        width   : 100%;
+        border  : 2px solid black;
         overflow: hidden;
-
-
     }
 
-    .operador-inf h1{
-
+    .operador-inf h1 {
         font-size: 50px;
-
-
     }
 
-    .operador-inf__estadisticas label{
-
+    .operador-inf__estadisticas label {
         font-size: 15px;
-    
-    
     }
 
-    .operador-inf__estadisticas p{
-
-        width: 100%;
-        font-size: 13px;
+    .operador-inf__estadisticas p {
+        width         : 100%;
+        font-size     : 13px;
         text-transform: capitalize;
-        
-    
     }
 
-    .container-item{
+    .container-item {
 
         width: 100%;
 
     }
 
-    .productos{
+    .productos {
 
         min-height: 0%;
 
@@ -168,115 +142,123 @@
 
 
     .container-descripcion label {
-        font-size: 35px;
-        font-weight: bold;
+        font-size     : 35px;
+        font-weight   : bold;
         text-transform: capitalize;
-        text-align: center;
-        margin-bottom: 10px;
+        text-align    : center;
+        margin-bottom : 10px;
     }
+
     .container-descripcion {
         text-align: center;
     }
 
 
-    .descripcion-inf{
+    .descripcion-inf {
 
         margin-top: 5px;
         text-align: left;
-        
-    }
-    .descripcion-inf ul{
-
-       font-size: 20px;
 
     }
 
+    .descripcion-inf ul {
 
-    .logo{
+        font-size: 20px;
 
-        width: 20%;
+    }
+
+    .logo {
+
+        width : 20%;
         margin: auto 0;
-    
+
     }
 
-    .footer-titulo{
+    .footer-titulo {
 
-        font-size: 15px;
+        font-size  : 15px;
         font-weight: 800;
-    
+
     }
 
-    .footer-subtitulo{
+    .footer-subtitulo {
 
         font-size: 12px;
-        cursor: pointer;
-        
+        cursor   : pointer;
+
     }
 
 
-    
 
-    .copyright{
+
+    .copyright {
 
         font-size: 13px;
 
     }
-    
-    
+    .operador-example-container {
+        width: 100%;
+    }
+
 
 }
 
+@media (max-width: 1000px) {
+    .operador-example-container {
+        width: 100%;
+    }
+}
 
 @media (max-width: 500px) and (min-width: 320px) {
-
-    
-    .nav{
-
-        
+    .operador-example-container {
+        width: 100%;
     }
-    .nav .logo{
+
+    .nav {}
+
+    .nav .logo {
 
         background-color: white;
-        width: 110px;
-        height: 55px;
+        width           : 110px;
+        height          : 55px;
 
     }
 
-    .Intro-titulo{
+    .Intro-titulo {
 
-        margin: 30px auto;
+        margin : 30px auto;
         display: none;
 
     }
 
-    .Intro-titulo h1{
+    .Intro-titulo h1 {
 
-        font-size: 25px;
+        font-size  : 25px;
         font-weight: 700;
-        
+
     }
 
-    .Intro-titulo p{
+    .Intro-titulo p {
 
         font-size: 20px;
 
     }
 
 
- 
-    .anuncio{
 
-        width: 90%;
+    .anuncio {
+
+        width : 90%;
         height: 120px;
 
     }
 
-    .operador{
+    .operador {
 
-        align-items: center;
-        flex-flow: column wrap;
+        align-items    : center;
+        flex-flow      : column wrap;
         justify-content: center;
-        gap: 50px;
+        gap            : 50px;
 
 
     }
@@ -284,199 +266,200 @@
     .contenedor {
 
         padding: 5% 0%;
-        height: 500px;
-        border: 2px solid black;
+        height : 500px;
+        border : 2px solid black;
     }
 
-    .contenedor h3{
+    .contenedor h3 {
 
         font-size: 25px;
 
     }
 
-    .operador table{
+    .operador table {
 
-        
-        width: 90%;
+
+        width : 90%;
         margin: 0% auto;
-        color: rgba(0, 0, 0, 0.822);
-        
+        color : rgba(0, 0, 0, 0.822);
+
     }
 
-    .operador table td{
+    .operador table td {
 
-        font-size: 12px;
+        font-size  : 12px;
         font-weight: 500;
-        
+
     }
 
 
-    .operador-inf{
+    .operador-inf {
 
         gap: 50px;
 
     }
 
-    .operador-inf h1{
+    .operador-inf h1 {
 
         font-size: 45px;
 
     }
 
-    .operador-inf p{
+    .operador-inf p {
 
         font-size: 20px;
-        width: 100%;
+        width    : 100%;
 
     }
 
 
-    .operador-inf__buttoms{
+    .operador-inf__buttoms {
 
         gap: 5px;
 
     }
 
 
-    
-    .operador-inf__estadisticas{
 
-        width: 100%;
-        border: 2px solid black;
-        margin:  5% auto;
-        overflow: hidden;
-        gap: 2px;
-        flex-wrap: wrap;
+    .operador-inf__estadisticas {
+
+        width        : 100%;
+        border       : 2px solid black;
+        margin       : 5% auto;
+        overflow     : hidden;
+        gap          : 2px;
+        flex-wrap    : wrap;
         border-radius: 15px;
 
     }
 
-    .operador-inf__estadisticas div{
+    .operador-inf__estadisticas div {
 
 
         margin: 2% auto;
-        width: 48.5%;
+        width : 48.5%;
 
     }
 
-    .operador-inf__estadisticas .hr1,.operador-inf__estadisticas .hr2{
+    .operador-inf__estadisticas .hr1,
+    .operador-inf__estadisticas .hr2 {
 
         display: none;
-        
+
 
     }
 
-    .operador-inf__estadisticas label{
+    .operador-inf__estadisticas label {
 
         font-size: 20px;
-    
+
     }
 
-    .operador-inf__estadisticas p{
+    .operador-inf__estadisticas p {
 
-        width: 100%;
-        font-size: 13px;
+        width         : 100%;
+        font-size     : 13px;
         text-transform: lowercase;
-        
+
     }
 
-    .titulo{
+    .titulo {
 
         margin: 10% 0;
 
     }
 
-    .titulo h1{
+    .titulo h1 {
 
         font-size: 28px;
 
     }
 
 
-    .productos{
+    .productos {
 
         margin-bottom: 20%;
-        
+
 
     }
 
-    .container-item{
+    .container-item {
 
-        width: 100%;
+        width        : 100%;
         border-bottom: 3px solid rgba(128, 128, 128, 0.5);
     }
 
-    
 
-    .item{
 
-        gap: 25px;
-        height: 160px;
+    .item {
+
+        gap    : 25px;
+        height : 160px;
         padding: 2% 2% 0%;
 
     }
 
-    .container-descripcion{
+    .container-descripcion {
 
         text-align: center;
 
     }
 
 
-    .descripcion-inf ul{
+    .descripcion-inf ul {
 
-        font-size: 15px;
+        font-size : 15px;
         text-align: left;
- 
-     }
+
+    }
 
 
-     .footer-container{
+    .footer-container {
 
         overflow: hidden;
 
-     }
+    }
 
 
 
-     .logo{
+    .logo {
 
-        width: 50%;
+        width : 50%;
         margin: auto 0;
-    
+
     }
 
     .footer-container {
 
-        flex-flow: column-reverse nowrap;
+        flex-flow      : column-reverse nowrap;
         justify-content: center;
-        align-items: center;
-        gap: 40px;
-        
+        align-items    : center;
+        gap            : 40px;
+
     }
 
-    .footer-container ul{
+    .footer-container ul {
 
         gap: 0;
-        
+
 
     }
 
-    .footer-titulo{
+    .footer-titulo {
 
-        
+
         font-weight: 800;
-    
+
     }
 
-    .footer-subtitulo{
+    .footer-subtitulo {
 
-        
+
         cursor: pointer;
-        
+
     }
 
-    .copyright{
+    .copyright {
 
         font-size: 8px;
 

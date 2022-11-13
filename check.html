@@ -1,118 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/check.css">
     <link rel="stylesheet" href="style/responsive/check-responsive.css">
+
+    <script src="https://kit.fontawesome.com/c79e37d273.js" crossorigin="anonymous"></script>
     <title>IMEI check</title>
 </head>
+
 <body>
-    
-    <main >
+
+    <header class="head-container">
+        <nav class="nav">
+            <img src="img/logo turbosimexpress.png" alt="Logo" class="logo">
+
+            <input type="checkbox" id="check1" style="display: none;">
+            <label for="check1" class="check-btn">
+            <i class="fa-solid fa-bars"></i></label>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>Imsi</li>
+                <li>Iccid</li>
+                <a href="check.html"> </a><li class="imeiCheckerBTN">Chequeo IMEI Gratis</li></a>
+            </ul>
+
+            <!-- <div class="Login">
+                <div class="Perfil"><label></label></div>
+                <label>cliente</label>
+            </div> -->
+
+        </nav>
+    </header>
+
+
+    <main id="check">
         <div class="anuncio"></div>
-        
-        <div class="container-inf">
-            <label for="" class="container-inf__titulo">chequeo de imei check gratis</label>
-
-            <label class="container-inf__text">Verificar IMEI para obtener  toda la informacion sobre su dispositivo, incluida la lista negra, SimLock, modelo, garantia, Gratis.</label>
-
-            <label class="container-inf__text">Todos los dispositivos compatibles, incluidos Apple, Iphone, Huawei, y Samsung, etc...</label>
-        
-
+        <div class="loading">
+            <div class="lds-spinner">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
 
+        <div class="container-inf">
+            <label for="" class="container-inf__titulo">chequeo de IMEI check gratis</label>
+            <label class="container-inf__text">Verifique su IMEI gratis para saber la compañia de su telefono</label>
+        </div>
 
         <div class="container-verificacion">
-            <input type="text" placeholder="Numero de IMEI (15 digitos)">
-            <button><label for="radio1">verificar</label></button>
-            
+            <input type="number" v-model="imei">
+            <button @click="CheckImei"><label for="radio1">verificar</label></button>
         </div>
-
-
 
         <!-- tabla -->
+        <div class="container-table" style="">
+            <div class="container-table__titulo">
+                <h1>IMEI Data</h1>
+                <h8 class="IMEIMessage"></h8>
+            </div>
+            <ul v-if="status" class="operador-table">
+                <li>
+                    <span>Modelo: </span>
+                    <div>{{ImeiData.model}}</div>
+                </li>
 
-        <input type="radio" id="radio1" name="radio">
+                <li>
+                    <span>IMEI: </span>
+                    <div>{{ImeiData.imei}}</div>
+                </li>
 
-        
-        <div class="container-table">
+                <li>
+                    <span>IMEI 2: </span>
+                    <div>{{ImeiData.imei2}}</div>
+                </li>
+
+                <li>
+                    <span>Numero de serie: </span>
+                    <div>{{ImeiData.serial}} </div>
+                </li>
+
+                <li>
+                    <span>Fecha de Compra: </span>
+                    <div>{{ImeiData.estPurchaseDate}}</div>
+                </li>
+
+                <li>
+                    <span>ID: </span>
+                    <div>{{ImeiData.nextId}}</div>
+                </li>
+
+                <li>
+                    <span>Operador: </span>
+                    <div>{{ImeiData.carrier}}</div>
+                </li>
+
+                <li>
+                    <span>Pais: </span>
+                    <div>{{ImeiData.country}}</div>
+                </li>
+
+                <li>
+                    <span>Desbloqueado: </span>
+                    <div v-if="ImeiData.simlock">No</div>
+                    <div v-else>Si</div>
+                </li>
+            </ul>
             
-            <div class="container-table__titulo"><h2>ejemplo</h2></div>
-            <table>
-                
-                    <tr>
-                        <th>dispositivo:</th>
-                        <td>iphone 11 pro max</td>
-                    </tr>
-    
-                    <tr>
-                        <th>modelo:</th>
-                        <td>a-2219 global</td>
-                    </tr>
-    
-                    <tr>
-                        <th>numero <span>imei</span>:</th>
-                        <td>852146972xxxx</td>
-                    </tr>
-    
-                    <tr>
-                        <th>numero <span>imei2</span>:</th>
-                        <td>92456456782xxxx</td>
-                    </tr>
-    
-                    <tr>
-                        <th>numero de serie:</th>
-                        <td> <span>f2lzku</span>xxxxx</td>
-                    </tr>
-    
-                    <tr>
-                        <th>fecha de fabricacion:</th>
-                        <td> 16 de octubre de 2019</td>
-                    </tr>
-    
-                    <tr>
-                        <th>edad de la unidad 3:</th>
-                        <td> 3 meses 5 dias</td>
-                    </tr>
-    
-                    <tr>
-                        <th>montado en:</th>
-                        <td> foxconn zhengzhou, china</td>
-                    </tr>
-    
-                    <tr>
-                        <th>siguiente <span>id</span> de poliza:</th>
-                        <td> 270</td>
-                    </tr>
-    
-                    <tr>
-                        <th>operador:</th>
-                        <td> reinos unidos vodagone activacion politica</td>
-                    </tr>
-    
-                    <tr>
-                        <th>pais:</th>
-                        <td> reinos unidos</td>
-                    </tr>
-    
-                    <tr>
-                        <th><span>sim</span> bloqueo:</th>
-                        <td> bloqueado</td>
-                    </tr>
-            </table>
+            <div class="button_table">
+                <button @click="ControlImeiData">
+                    <label for="radio2">cerrar</label>
+                </button> 
 
-            <input type="radio" id="radio2" name="radio">
-            <button><label for="radio2" >cerrar</label></button>
-
+                <button v-if="status" @click="CopyText">
+                    <label for="radio2">Copy inf.</label>
+                </button>
+            </div>
 
         </div>
 
-
-        
     </main>
 
-
+    <footer>
+        <div class="copyright">
+            Copyright © 2020-2022 Flyer Express. All Rights Reserved. Terms & Conditions, Refund Policy
+        </div>
+    </footer>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="js/imei.js"></script>
+
 </html>

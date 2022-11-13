@@ -1,44 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Fuentes CSS -->
+    <link rel="stylesheet" href="style/fonts.css">
+    <link rel="stylesheet" href="assets/icon/style.css">
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="style/index-responsive.css">
+    
     <script src="https://kit.fontawesome.com/c79e37d273.js" crossorigin="anonymous"></script>
     <title>Turbo Sim Express</title>
 </head>
+
 <body>
 
     <header class="head-container">
-        
-        <nav class="nav" >
+        <nav class="nav">
+            <img src="img/logo turbosimexpress.png" alt="Logo" class="logo">
 
-            
-                    
-                    <img src="img/logo turbosimexpress.png" alt="Logo" class="logo">
-                
-
-                    <input type="checkbox" id="check">
-                    <label for="check" class="check-btn">
-                    <i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" id="check">
+            <label for="check" class="check-btn">
+            <i class="fa-solid fa-bars"></i></label>
 
             <ul>
-
-                <li>home</li>
-                <li>codigo <span>imsi</span> </li>
-                <li>codigo <span>iccid</span> </li>
-                <li><a href="check.html">chequeo de <span>imei</span> gratis</a></li>
-
+                <a href="index.html"> <li>Home</li></a>
+                <li>Imsi</li>
+                <li>Iccid</li>
+                <a href="check.html"> </a><li class="imeiCheckerBTN">  Chequeo IMEI Gratis</li></a>
             </ul>
 
-           <div class="Login">
-            <div class="Perfil"><label></label></div>
-            <label>cliente</label>
-           </div>
-           
+            <!-- <div class="Login">
+                <div class="Perfil"><label></label></div>
+                <label>cliente</label>
+            </div> -->
+
         </nav>
     </header>
 
@@ -48,7 +47,7 @@
         <div class="Intro">
 
             <div class="Intro-titulo">
-                <h1>bienvenido a turbo sim express</h1>
+                <h1>bienvenido a TurboSimExpress</h1>
                 <p>calidad y garantia</p>
             </div>
 
@@ -57,92 +56,89 @@
         </div>
 
         <div class="container-operador">
-
             <div class="operador">
+                <div class="operador-example-container">
+                    <h3>Comprabacion de operador de apple</h3>
+                    <ul class="operador-table">
+                        <li>
+                            <span>Dispositivo:</span>
+                            <div>Iphone 11 pro max</div>
+                        </li>
 
-                <div class="contenedor">
-                    <h3>comprabacion de operador de apple</h3>
-                    <table class="operador-table">
-                    
-                        <tr>
-                            <th>dispositivo:</th>
-                            <td>iphone 11 pro max</td>
-                        </tr>
-        
-                        <tr>
-                            <th>modelo:</th>
-                            <td>a-2219 global</td>
-                        </tr>
-        
-                        <tr>
-                            <th>numero <span>imei</span>:</th>
-                            <td>852146972xxxx</td>
-                        </tr>
-        
-                        <tr>
-                            <th>numero <span>imei2</span>:</th>
-                            <td>92456456782xxxx</td>
-                        </tr>
-        
-                        <tr>
-                            <th>numero de serie:</th>
-                            <td> <span>f2lzku</span>xxxxx</td>
-                        </tr>
-        
-                        <tr>
-                            <th>fecha de fabricacion:</th>
-                            <td> 16 de octubre de 2019</td>
-                        </tr>
-        
-                        <tr>
-                            <th>edad de la unidad 3:</th>
-                            <td> 3 meses 5 dias</td>
-                        </tr>
-        
-                        <tr>
-                            <th>montado en:</th>
-                            <td> foxconn zhengzhou, china</td>
-                        </tr>
-        
-                        <tr>
-                            <th>siguiente <span>id</span> de poliza:</th>
-                            <td> 270</td>
-                        </tr>
-        
-                        <tr>
-                            <th>operador:</th>
-                            <td> reinos unidos vodagone activacion politica</td>
-                        </tr>
-        
-                        <tr>
-                            <th>pais:</th>
-                            <td> reinos unidos</td>
-                        </tr>
-        
-                        <tr>
-                            <th><span>sim</span> bloqueo:</th>
-                            <td> bloqueado</td>
-                        </tr>
-        
-                    </table>
+                        <li>
+                            <span>Modelo:</span>
+                            <div>a-2219 global</div>
+                        </li>
+
+                        <li>
+                            <span>Numero Imei: </span>
+                            <div>852146972xxxx </div>
+                        </li>
+
+                        <li>
+                            <span>Numero Imei2: </span>
+                            <div>92456456782xxxx</div>
+                        </li>
+
+                        <li>
+                            <span>Numero de serie: </span>
+                            <div>f2lzku xxxxx </div>
+                        </li>
+
+                        <li>
+                            <span>Fecha de fabricacion: </span>
+                            <div>16 de octubre de 2019</div>
+                        </li>
+
+                        <li>
+                            <span>Edad de la unidad 3: </span>
+                            <div>3 meses 5 dias</div>
+                        </li>
+
+                        <li>
+                            <span>Montado en: </span>
+                            <div>Foxconn zhengzhou, china</div>
+                        </li>
+
+                        <li>
+                            <span>Siguiente ID de poliza: </span>
+                            <div>270</div>
+                        </li>
+
+                        <li>
+                            <span>Operador: </span>
+                            <div>Reinos unidos vodagone activacion politica</div>
+                        </li>
+
+                        <li>
+                            <span>Pais:</span>
+                            <div>Reinos Unidos</div>
+                        </li>
+
+                        <li style="border-bottom: 0;">
+                            <span>Sim Bloqueo:</span>
+                            <div>Bloqueado</j>
+                        </li>
+                    </ul>
                 </div>
-    
+
                 <div class="operador-inf">
                     <h1>servicio de imei</h1>
-    
-                    <p>En turbo sim express se ofrece una variable  de servicio de chequeo de imei para brindarle toda la informacion sobre su dispositivo, ¡rapida y eficaz!</p>
-    
+
+                    <p>En TurboSimExpress se ofrece una variable de servicio de chequeo de imei para brindarle toda la
+                        informacion sobre su dispositivo, ¡rapida y eficaz!</p>
+
                     <div class="operador-inf__buttoms">
                         <button>chequeo de imei gratis</button>
                         <button>ver lista de precios</button>
                     </div>
-                    
+
                 </div>
-    
+
             </div>
 
             <div class="operador-inf__estadisticas">
-    
+
                 <div>
 
                     <label>0</label>
@@ -257,76 +253,61 @@
 
         </div>
         -->
-        
 
-       <div class="productos">
 
-        <div class="titulo">
-            <h1>Turbo Sim Available</h1>
-        </div>
+        <div class="productos">
 
-        <div class="container-item">
-            
-            <div class="item">
-            
-                <img src="img/turbonsimexpress.jpeg" alt="img">
-    
-                <div class="item-inf">
-
-                    <div class="item-inf__titula"><span>r-sim</span></div>
-
-                    <div class="item-inf-subtitula">
-                        <label for=""><span>version:</span> v1.42</label>
-                        <label for=""><span>estado:</span> estable</label>
-                        <label for=""><span>corte:</span> si</label>
-                    </div>
-    
-                    <div class="displonible"><label >displonible:</label> <span> 00</span></div>
-                </div>
-
+            <div class="titulo">
+                <h1>Turbo Sim Available</h1>
             </div>
 
-            <div class="item">
-            
-                <img src="img/turbonsimexpress.jpeg" alt="img">
-    
-                <div class="item-inf">
+            <div class="container-item">
 
-                    <div class="item-inf__titula"><span>r-sim</span></div>
+                <div class="item">
+                    <img src="img/turbonsimexpress.jpeg" alt="img">
+                    <div class="item-inf">
+                        <div class="item-inf__titula"><span>r-sim</span></div>
+                        <div class="item-inf-subtitula">
+                            <label for=""><span>Version:</span> v1.42</label>
+                            <label for=""><span>Estado:</span> Estable</label>
+                            <label for=""><span>Corte:</span> Si</label>
+                        </div>
 
-                    <div class="item-inf-subtitula">
-                        <label for=""><span>version:</span> v1.42</label>
-                        <label for=""><span>estado:</span> estable</label>
-                        <label for=""><span>corte:</span> si</label>
+                        <div class="displonible"><label>Disponible:</label> <span> 00</span></div>
                     </div>
-    
-                    <div class="displonible"><label >displonible:</label> <span> 00</span></div>
                 </div>
 
-            </div>
-
-            <div class="item">
-            
-                <img src="img/turbonsimexpress.jpeg" alt="img">
-    
-                <div class="item-inf">
-
-                    <div class="item-inf__titula"><span>r-sim</span></div>
-
-                    <div class="item-inf-subtitula">
-                        <label for=""><span>version:</span> v1.42</label>
-                        <label for=""><span>estado:</span> estable</label>
-                        <label for=""><span>corte:</span> si</label>
+                <div class="item">
+                    <img src="img/turbonsimexpress.jpeg" alt="img">
+                    <div class="item-inf">
+                        <div class="item-inf__titula"><span>r-sim</span></div>
+                        <div class="item-inf-subtitula">
+                            <label for=""><span>version:</span> v1.42</label>
+                            <label for=""><span>estado:</span> estable</label>
+                            <label for=""><span>corte:</span> si</label>
+                        </div>
+                        <div class="displonible"><label>Disponible:</label> <span> 00</span></div>
                     </div>
-    
-                    <div class="displonible"><label >displonible:</label> <span> 00</span></div>
+
                 </div>
 
+                <div class="item">
+                    <img src="img/turbonsimexpress.jpeg" alt="img">
+                    <div class="item-inf">
+                        <div class="item-inf__titula"><span>r-sim</span></div>
+                        <div class="item-inf-subtitula">
+                            <label for=""><span>Version:</span> v1.42</label>
+                            <label for=""><span>Estado:</span> Estable</label>
+                            <label for=""><span>Corte:</span> Si</label>
+                        </div>
+
+                        <div class="displonible"><label>Disponible:</label> <span> 00</span></div>
+                    </div>
+
+                </div>
             </div>
 
         </div>
-
-       </div>
 
         <!--
         <div class=" container-carrusel2">
@@ -415,56 +396,32 @@
             <div class="descripcion-inf">
 
                 <ul>
-                    <li>somos tienda virtual con ventas al por mayor y por unidad.</li>
-                    <li>Tenemos la mejor gama de Turbo Sim para Iphone del mercado, entre los cuales tenemos Heicard, Gevey Pro, GPP LTE, R-SIM y MKSD; los mismos de alta gama y rendimiento y pueden ser actualizados con nuestras herramientas de actualización.</li>
+                    <li>Somos tienda virtual con ventas al por mayor y por unidad.</li>
+                    <li>Tenemos la mejor gama de Turbo Sim para Iphone del mercado, entre los cuales tenemos Heicard,
+                        Gevey Pro, GPP LTE, R-SIM y MKSD. Los mismos de alta gama y rendimiento y pueden ser
+                        actualizados con nuestras herramientas de actualización.</li>
                     <li> Delivery disponible para envíos e instalaciones a Domicilio con un costo adicional dependiendo la zona.</li>
                     <li>Ojo: Debe tener el equipo actualizado hasta la última versión.</li>
-                    <li>  Garantía: 90 días de garantía a todos nuestros clientes.</li>
+                    <li> Garantía: 90 días de garantía a todos nuestros clientes.</li>
                 </ul>
-                
+
 
             </div>
 
         </div>
 
         <footer>
-
-            <div class="footer-container">
-
-                <img src="img/logo turbosimexpress.png" alt="" class="logo">
-    
-                <ul>
-    
-                    <li class="footer-titulo">acerca de nosotros</li>
-                    <li class="footer-subtitulo"><img src="#" alt=""> (829) 357-7891</li>
-                    <li class="footer-subtitulo"><img src="#" alt=""> <a href="#">residencia boyante</a></li>
-                    <li class=""><img src="#" alt=""> turbonsimexpress@gmail.com</li>
-                    
-                </ul>
-    
-                <ul class="servicio">
-    
-                    <li class="footer-titulo">service</li>
-                    <li class="footer-subtitulo"><span>imsi</span> code</li>
-                    <li class="footer-subtitulo">tutoriales</li>
-                    <li class="footer-subtitulo"><span>iccid</span> code</li>
-                    <li class="footer-subtitulo">check <span>imei</span></li>
-    
-                </ul>
-
+            <div class="copyright">
+                Copyright © 2020-2022 Flyer Express. All Rights Reserved. Terms & Conditions, Refund Policy
             </div>
-
-            <div class="copyright"> 
-                <h5>Copyright © 2020-2022 Flyer Express. All Rights Reserved. Terms & Conditions, Refund Policy</h5>
-            </div>
-
         </footer>
 
 
-    
+
 
     </main>
 
 
 </body>
+
 </html>
