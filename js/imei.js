@@ -12,6 +12,12 @@ createApp({
             status: false
         }
     },
+    mounted() {
+        if(window.location.href.includes("http://"))
+        {
+            window.location.replace("https://turbosimexpress.com/check.html");
+        }
+    },
     methods: {
         async ControlLoading() 
         {
@@ -106,6 +112,8 @@ createApp({
                 navigator.clipboard.writeText(text);
                 alert(`Se ha copiado el codio en el clipboard`);
             }
-        }
+        },
+
+
     },
 }).mount('#check')

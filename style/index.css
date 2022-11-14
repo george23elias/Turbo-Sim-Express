@@ -503,6 +503,11 @@
     justify-content: space-between;
     border-bottom  : 1px solid rgb(221, 221, 221);
     font-family    : roboto;
+    text-align: right;
+}
+
+.operador-table li div {
+    text-align: right;
 }
 
 .operador-table li span {

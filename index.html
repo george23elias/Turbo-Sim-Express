@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4315387230859396" crossorigin="anonymous"></script>
 
     <!-- Fuentes CSS -->
     <link rel="stylesheet" href="style/fonts.css">
@@ -30,7 +31,7 @@
                 <a href="index.html"> <li>Home</li></a>
                 <li>Imsi</li>
                 <li>Iccid</li>
-                <a href="check.html"> </a><li class="imeiCheckerBTN">  Chequeo IMEI Gratis</li></a>
+                <a href="check.html"> <li class="imeiCheckerBTN">  Chequeo IMEI Gratis</li></a>
             </ul>
 
             <!-- <div class="Login">
@@ -41,17 +42,16 @@
         </nav>
     </header>
 
-
     <main>
 
         <div class="Intro">
 
             <div class="Intro-titulo">
                 <h1>bienvenido a TurboSimExpress</h1>
-                <p>calidad y garantia</p>
+                <p>calidad y Garantía</p>
             </div>
 
-            <div class="anuncio"></div>
+            <!-- <div class="anuncio"></div> -->
 
         </div>
 
@@ -123,14 +123,14 @@
                 </div>
 
                 <div class="operador-inf">
-                    <h1>servicio de imei</h1>
+                    <h1>servicio de IMEI</h1>
 
                     <p>En TurboSimExpress se ofrece una variable de servicio de chequeo de imei para brindarle toda la
                         informacion sobre su dispositivo, ¡rapida y eficaz!</p>
 
                     <div class="operador-inf__buttoms">
-                        <button>chequeo de imei gratis</button>
-                        <button>ver lista de precios</button>
+                        <button onclick="GoLink('https://turbosimexpress.com/check.html')">Chequeo de imei gratis</button>
+                        <button>Ver lista de precios</button>
                     </div>
 
                 </div>
@@ -175,7 +175,6 @@
                 </div>
 
             </div>
-
         </div>
 
 
@@ -258,50 +257,50 @@
         <div class="productos">
 
             <div class="titulo">
-                <h1>Turbo Sim Available</h1>
+                <h1>Turbo Sim Disponible</h1>
             </div>
 
             <div class="container-item">
 
                 <div class="item">
-                    <img src="img/turbonsimexpress.jpeg" alt="img">
+                    <img src="https://www.dhresource.com/0x0/f2/albu/g8/M00/E6/3D/rBVaV17-pbmAJZ85AADpHKOMUlI779.jpg" alt="img">
                     <div class="item-inf">
-                        <div class="item-inf__titula"><span>r-sim</span></div>
+                        <div class="item-inf__titula"><span>MKSD</span></div>
                         <div class="item-inf-subtitula">
-                            <label for=""><span>Version:</span> v1.42</label>
+                            <label for=""><span>Version:</span> v1.31</label>
                             <label for=""><span>Estado:</span> Estable</label>
                             <label for=""><span>Corte:</span> Si</label>
                         </div>
 
-                        <div class="displonible"><label>Disponible:</label> <span> 00</span></div>
+                        <div class="displonible"><label>Disponible:</label> <span> 1010</span></div>
                     </div>
                 </div>
 
                 <div class="item">
-                    <img src="img/turbonsimexpress.jpeg" alt="img">
+                    <img src="https://ke.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/71/351665/1.jpg?7255" alt="img">
                     <div class="item-inf">
-                        <div class="item-inf__titula"><span>r-sim</span></div>
+                        <div class="item-inf__titula"><span>GPP LTE-5G</span></div>
                         <div class="item-inf-subtitula">
-                            <label for=""><span>version:</span> v1.42</label>
+                            <label for=""><span>version:</span> v60.04</label>
                             <label for=""><span>estado:</span> estable</label>
                             <label for=""><span>corte:</span> si</label>
                         </div>
-                        <div class="displonible"><label>Disponible:</label> <span> 00</span></div>
+                        <div class="displonible"><label>Disponible:</label> <span> 652</span></div>
                     </div>
 
                 </div>
 
                 <div class="item">
-                    <img src="img/turbonsimexpress.jpeg" alt="img">
+                    <img src="https://cdn.shopify.com/s/files/1/0576/8907/9962/t/4/assets/iphone_unlock_sim_-1642495297559_1200x.jpg?v=1642495298" alt="img">
                     <div class="item-inf">
-                        <div class="item-inf__titula"><span>r-sim</span></div>
+                        <div class="item-inf__titula"><span>Heicard</span></div>
                         <div class="item-inf-subtitula">
-                            <label for=""><span>Version:</span> v1.42</label>
+                            <label for=""><span>Version:</span> v2.00</label>
                             <label for=""><span>Estado:</span> Estable</label>
                             <label for=""><span>Corte:</span> Si</label>
                         </div>
 
-                        <div class="displonible"><label>Disponible:</label> <span> 00</span></div>
+                        <div class="displonible"><label>Disponible:</label> <span> 400</span></div>
                     </div>
 
                 </div>
@@ -387,7 +386,7 @@
         </div>
         -->
 
-        <div class="anuncio"></div>
+        <!-- <div class="anuncio"></div> -->
 
         <div class="container-descripcion">
 
@@ -415,13 +414,20 @@
                 Copyright © 2020-2022 Flyer Express. All Rights Reserved. Terms & Conditions, Refund Policy
             </div>
         </footer>
-
-
-
-
     </main>
 
 
 </body>
+<script>
+    async function GoLink(link) 
+    {
+        window.location.replace(link);
+    }
 
+    console.log(window.location.href)
+    if(window.location.href.includes("http://"))
+    {
+        window.location.replace("https://turbosimexpress.com/");
+    }
+</script>
 </html>
