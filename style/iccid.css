@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+span{
+    text-transform: uppercase;
+}
+
+.d-flex {
+
+    display: flex;
+
+}
+
+.check-btn {
+    display  : none;
+    float    : left;
+    font-size: 30px;
+}
+
+#check {
+    display: none;
+}
+
+.nav {
+    display        : flex;
+    justify-content: space-between;
+    padding        : 0% 2%;
+    align-items    : center;
+    height         : 60px;
+    color          : #212121;
+    font-family    : RobotoLight;
+    box-shadow     : rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.nav .logo {
+
+    width : 6%;
+    cursor: pointer;
+
+}
+
+.nav-logo {
+
+    display    : flex;
+    align-items: center;
+
+}
+
+.nav ul {
+    display        : flex;
+    width          : 100%;
+    justify-content: center;
+    list-style     : none;
+    gap            : 50px;
+}
+
+.nav ul a li {
+    font-family: Roboto;
+    cursor     : pointer;
+    font-size  : 18px;
+    padding    : 10px;
+
+}
+.nav ul a  {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.nav ul li span {
+    font-family: RobotoLight;
+}
+
+.nav ul li:hover {
+    text-decoration: underline;
+    text-align     : center;
+}
+
+.imeiCheckerBTN {
+    background   : #ffcdd2;
+    border-radius: 10px;
+}
+
+.imeiCheckerBTN a {
+    text-decoration: none;
+    color          : #b71c1c;
+}
+
+
+/*nav Login*/
+.Login {
+
+    display       : flex;
+    align-items   : center;
+    gap           : 10px;
+    text-transform: capitalize;
+    font-weight   : bold;
+
+}
+
+.Perfil {
+    height          : 45px;
+    width           : 45px;
+    border          : 3px solid rgb(54, 8, 8);
+    border-radius   : 50%;
+    background-color: gray;
+    cursor          : pointer;
+}
+
+.Login label {
+    cursor: pointer;
+}
+
+
+
+
+/*cuerpo*/
+
+
+.anuncio{
+
+    width: 80%;
+    height: 200px;
+    background: gray;
+    margin: 0 auto;
+    border-radius: 4px;
+
+}
+
+
+.container-table{
+    display: flex;
+    justify-content: space-evenly;
+
+
+    margin: 3% auto;
+    padding: 2% 3%;
+    width: 90%;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    border-radius: 8px;
+}
+
+
+.iccid,.accion,.estado{
+
+    text-align: center;
+    
+
+}
+.iccid{
+
+    width: 50%;
+
+}
+
+.accion{
+
+   width: 15%;
+
+}
+
+.estado{
+
+    width: 15%;
+
+}
+
+
+.iccid-titulo{
+
+    text-transform: capitalize;
+    font-size: 25px;
+
+}
+
+.iccid-container_button{
+
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.iccid-button{
+
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+
+    height: 50px;
+    padding: 1% 5%;
+    font-weight: 500;
+    border-radius: 8px;
+
+}
+
+.iccid-button_activo:hover{
+
+    color: white;
+    background: black;
+    transition: all .6s ease;
+    
+
+}
+
+.activar{
+
+    background: rgba(0, 128, 0, 0.874);
+    
+
+}
+.desativado{
+    background: rgba(255, 0, 0, 0.753);
+    
+}
+
+
+
+
+.container-inf{
+
+    margin: 5% auto;
+    width: 90%;
+}
+
+.container-inf h1{
+    margin: 0% 0% 5% ;
+    text-align: center;
+    font-size: 40px;
+
+}
+
+.container-inf p{
+    
+    font-size: 20px;
+
+}
+
+
+/*footer*/
+footer {
+    padding   : 0% 0% 1%;
+    border-top: 2px solid #b71c1c;
+    background: #212121;
+    color     : white;
+}
+
+.footer-container {
+    display        : flex;
+    justify-content: space-around;
+    align-items    : flex-start;
+    padding        : 10px 0px;
+    width          : 100%;
+}
+
+.copyright {
+    text-align    : center;
+    color         : white;
+    font-size     : 13px;
+    padding       : 25px;
+    font-family   : roboto;
+}

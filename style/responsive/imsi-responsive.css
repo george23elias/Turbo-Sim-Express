@@ -1,0 +1,241 @@
+
+@media (max-width: 1000px) and (min-width: 769px) {
+    
+
+
+    .anuncio{
+        margin: 2% auto;
+        height: 100px;
+        width: 80%;
+    }
+    .container-inf{
+
+        gap: 40px;
+
+    }
+
+    .inf-select{
+        padding: 0 30px;
+        gap: 20px;
+    }
+
+    .inf-select select,.inf-select select option {
+        width: 80%;
+    }
+
+    /**/
+    .table_imsi-desktop{
+        display: none;
+    }
+
+    .table_imsi-movil{
+        display: flex;
+        flex-flow: column wrap;
+        gap: 25px;
+    }
+    
+    .table_imsi-movil li{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0% 2%;
+        text-align: center;
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+        border-radius: 8px;
+        width: 95%;
+        margin: 0% auto;
+        padding: 1.5%;
+    }
+
+    .movil-pais,.movil-compañia{
+        width: 50%;
+        margin-bottom: 15px;
+    }
+
+    .movil-pais label,.movil-compañia label{
+        text-transform: capitalize;
+        font-size: 18px;
+        
+    }
+    
+    .movil-pais label span,.movil-compañia label span{
+        font-weight: 800;
+        font-size: 22px;
+    }
+
+    .movil-imei{
+
+        display: flex;
+        flex-direction: column;
+        width: 33%;
+
+    }
+    .movil-imei label{
+        text-transform: capitalize;
+    }
+    
+    .movil-imei label span{
+        font-size: 22px;
+        font-weight: 800;
+    }
+    
+    
+    
+}
+
+@media (max-width: 768px) {
+    
+
+    .anuncio{
+        margin: 2% auto;
+        height: 100px;
+        width: 90%;
+    }
+
+    .inf-select{
+        padding: 0 5px;
+        gap: 20px;
+    }
+
+    .inf-select select,.inf-select select option {
+        width: 80%;
+    }
+
+    /**/
+    .table_imsi-desktop{
+        display: none;
+    }
+
+    .table_imsi-movil{
+        display: flex;
+        flex-flow: column wrap;
+        gap: 25px;
+    }
+    
+    .table_imsi-movil li{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0% 2%;
+        text-align: center;
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+        border-radius: 8px;
+        width: 95%;
+        margin: 0% auto;
+        padding: 1.5%;
+    }
+
+    .movil-pais,.movil-compañia{
+        width: 50%;
+        margin-bottom: 15px;
+    }
+
+    .movil-pais label,.movil-compañia label{
+        text-transform: capitalize;
+        font-size: 18px;
+        
+    }
+    
+    .movil-pais label span,.movil-compañia label span{
+        font-weight: 800;
+        font-size: 22px;
+    }
+
+    .movil-imei{
+
+        display: flex;
+        flex-direction: column;
+        width: 33%;
+
+    }
+    .movil-imei label{
+        text-transform: capitalize;
+    }
+    
+    .movil-imei label span{
+        font-size: 22px;
+        font-weight: 800;
+    }
+    
+    
+    
+}
+
+
+/*navegacion*/
+
+@media (max-width: 500px) and (min-width: 320px) {
+    .nav .logo {
+        background-color: white;
+        width           : 110px;
+        height          : 55px;
+    }
+
+}
+
+/*menu*/
+@media (max-width: 1000px) {
+
+    .Login {}
+
+    .check-btn {
+
+        display : block;
+        position: absolute;
+        float   : left;
+
+    }
+
+    .nav ul {
+        position       : fixed;
+        width          : 100%;
+        height         : 100vh;
+        background     : white;
+        top            : 60px;
+        left           : -100%;
+        text-align     : center;
+        transition     : all .5s;
+        flex-flow      : column wrap;
+        gap            : 0;
+        justify-content: flex-start;
+    }
+
+    .nav ul li {
+        display        : block;
+        height         : 100px;
+        box-shadow     : rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        overflow       : hidden;
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+        border-radius  : none;
+        font-size      : 15px;
+        font-family    : robotoMedium;
+    }
+
+    #check:checked~ul {
+
+        left: 0%;
+
+    }
+
+    .nav .logo {
+
+        width           : 110px;
+        height          : 55px;
+        cursor          : pointer;
+        margin-left     : 50px;
+        background-color: white;
+        padding         : 1.5% 2%;
+
+    }
+
+    .nav {
+
+        width: 100vw;
+
+
+    }
+
+
+}
