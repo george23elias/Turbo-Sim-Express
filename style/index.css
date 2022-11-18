@@ -407,7 +407,7 @@
 }
 
 .container-operador {
-    min-height: 100vh;
+    position: relative;
 }
 
 .operador {
@@ -584,6 +584,98 @@
     font-family   : roboto;
     text-transform: capitalize;
 }
+
+
+
+
+/*lista*/
+
+.container-ListaPrecio{
+    position: fixed;
+    display: none;
+    top: 0%;
+    left: 0%;
+    height: 100vh;
+    width: 100%;
+
+    background: rgba(0, 0, 0, 0.9);
+    padding: 2% 0;
+    overflow: auto;
+}
+
+.listaprecio{
+    margin: 0 auto;
+    width: 80%;
+    background: white;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0) 0px 1px 0px inset;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.listaprecio_titulo,.listaprecio_subtitulo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.listaprecio_titulo span,.listaprecio_subtitulo span{
+    width: 80%;
+    padding: 0% 2%;
+    text-align: left;
+}
+
+.listaprecio_titulo{
+    background: rgba(0, 0, 0, 0.4);
+    padding: 0% 2%;
+
+}
+
+.listaprecio_titulo label{
+    font-size: 28px;
+    font-weight: 800;
+    text-transform: uppercase;
+    overflow: hidden;
+    width: 20%;
+    text-align: center;
+    
+}
+
+.listaprecio_subtitulo{
+    border-bottom: 4px solid grey;
+    padding: 0% 2%;
+    
+}
+
+.listaprecio_subtitulo label{
+    font-size: 25px;
+    width: 20%;
+    text-align: center;
+    
+}
+
+/*button*/
+
+.container-ListaPrecio button{
+    margin: 2% 50%;
+    width: 135px;
+    height: 60px;
+    font-size: 25px;
+    color: white;
+    background: darkred;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.container-ListaPrecio button label{
+    cursor: pointer;
+}
+
+.container-ListaPrecio button:hover{
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.9);
+    border: 3px solid rgba(255, 0, 0, 0.8);
+}
+
 
 /*footer*/
 footer {

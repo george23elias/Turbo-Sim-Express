@@ -471,3 +471,67 @@
 
 
 }
+
+
+@media (max-width: 1000px ) and (min-width: 520px){
+
+
+
+    .listaprecio{
+        width: 95%;
+    }
+
+    .listaprecio_titulo label{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .listaprecio_subtitulo label{
+        font-size: 16px;
+    }
+
+
+
+    
+}
+
+@media (max-width: 519px ) and (min-width: 320px){
+
+
+
+    .listaprecio{
+        width: 96%;
+    }
+
+    .listaprecio_titulo {
+        
+      display: grid;
+      grid-template-columns: 15% 60% auto;
+
+    }
+    .listaprecio_titulo span,.listaprecio_subtitulo span{
+        width: 100%;
+
+    }
+    .listaprecio_titulo label{
+        font-size: 18px;
+        font-weight: 600;
+        width: 100%;
+        text-align: center;
+    }
+
+    .listaprecio_subtitulo label{
+        font-size: 16px;
+        
+    }
+
+
+    .container-ListaPrecio button{
+
+        margin: 2% 30%;
+        
+    }
+
+    
+}
+
